@@ -16,14 +16,14 @@ export function About() {
 
   const experiences = [
     {
-      title: "ML Research Intern",
+      title: "EEC - ML Research Intern",
       description: "Focused on building deliverable ML based projects.",
       year: "Present",
     },
     {
       title: "Gingr - Web Intern",
       description: "Built end-to-end solutions using modern tech stacks and best practices",
-      year: "2024 September - 2024 November",
+      year: "2025 September - 2025 November",
     },
   ]
 
