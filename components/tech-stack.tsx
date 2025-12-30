@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 const technologies = [
@@ -14,15 +13,7 @@ const technologies = [
 ]
 
 export function TechStack() {
-  const [scrollPosition, setScrollPosition] = useState(0)
   const { ref, isVisible } = useScrollAnimation()
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setScrollPosition((prev) => (prev + 1) % 100)
-    }, 100)
-    return () => clearInterval(interval)
-  }, [])
 
   return (
     <section ref={ref} className="relative py-20 px-6 bg-background border-t border-border">
@@ -44,8 +35,7 @@ export function TechStack() {
           <div
             className="flex gap-12 whitespace-nowrap py-8 px-6"
             style={{
-              transform: `translateX(calc(-${scrollPosition}% - ${scrollPosition * 0.5}px))`,
-              transition: "none",
+              animation: "marquee 18s linear infinite",
             }}
           >
             {[...technologies, ...technologies].map((tech, idx) => (

@@ -1,6 +1,7 @@
 "use client"
 
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { SiGithub, SiLinkedin } from "react-icons/si"
 
 export function ConnectSection() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation()
@@ -9,27 +10,21 @@ export function ConnectSection() {
   const contacts = [
     {
       name: "GitHub",
-      href: "https://github.com",
-      icon: "GitHub",
+      href: "https://github.com/R-Nikhil-Ganesh",
+      icon: <SiGithub className="text-4xl" />,
       color: "hover:text-white hover:border-white",
     },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com",
-      icon: "LinkedIn",
+      href: "https://www.linkedin.com/in/nikhil-ganesh-a4155731b",
+      icon: <SiLinkedin className="text-4xl" />,
       color: "hover:text-blue-400 hover:border-blue-400",
     },
     {
       name: "Email",
-      href: "mailto:your.email@example.com",
+      href: "mailto:nikhilganesh.r@gmail.com",
       icon: "✉️",
       color: "hover:text-cyan-400 hover:border-cyan-400",
-    },
-    {
-      name: "Phone",
-      href: "tel:+1234567890",
-      icon: "📞",
-      color: "hover:text-purple-400 hover:border-purple-400",
     },
   ]
 
@@ -54,7 +49,7 @@ export function ConnectSection() {
 
           <div
             ref={gridRef}
-            className={`grid grid-cols-2 md:grid-cols-4 gap-6 transition-all duration-1000 ${
+            className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center justify-items-center transition-all duration-1000 ${
               gridVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
@@ -72,10 +67,9 @@ export function ConnectSection() {
                 <div className="text-4xl">{contact.icon}</div>
                 <span className="font-medium text-foreground">{contact.name}</span>
                 <span className="text-xs text-muted-foreground group-hover:text-current transition-colors">
-                  {contact.name === "Email" && "your.email@example.com"}
-                  {contact.name === "Phone" && "+1 (234) 567-890"}
-                  {contact.name === "GitHub" && "github.com/yourprofile"}
-                  {contact.name === "LinkedIn" && "linkedin.com/in/yourprofile"}
+                  {contact.name === "Email" && "nikhilganesh.r@gmail.com"}
+                  {contact.name === "GitHub" && "github.com/R-Nikhil-Ganesh"}
+                  {contact.name === "LinkedIn" && "www.linkedin.com/in/nikhil-ganesh"}
                 </span>
               </a>
             ))}
@@ -83,7 +77,7 @@ export function ConnectSection() {
 
           <div className="mt-12 pt-8 border-t border-white/[0.08]">
             <p className="text-sm text-muted-foreground">
-              © 2025 Full Stack & AI Engineer. Built with Next.js and Tailwind CSS.
+              © 2025 Built with Next.js and Tailwind CSS.
             </p>
           </div>
         </div>

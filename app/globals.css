@@ -132,3 +132,17 @@
     @apply bg-card/30 backdrop-blur-md;
   }
 }
+
+/* marquee animation for TechStack */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 18s linear infinite;
+}

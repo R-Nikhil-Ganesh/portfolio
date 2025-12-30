@@ -7,7 +7,7 @@ import Image from "next/image"
 export function Hero() {
   const { ref, isVisible } = useScrollAnimation()
 
-  const typedText = useTypewriter(["Blockchain", "NLP", "AI/ML", "Full-Stack Development"], 50, 30, 2000)
+  const typedText = useTypewriter(["Blockchain", "NLP", "AI/ML", "Full-Stack Development"], 140, 80, 2000)
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
@@ -24,23 +24,23 @@ export function Hero() {
       >
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text content */}
-          <div className="space-y-8 order-2 md:order-1">
+          <div className="space-y-4 order-2 md:order-1">
             {/* Main headline */}
             <div>
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance leading-tight">
                 Building scalable systems with
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                  Code & AI
+                  Code
                 </span>
               </h1>
             </div>
 
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed text-pretty min-h-[3em]">
-              Computer Science Student passionate about{" "}
-              <span className="text-cyan-400 font-semibold">
-                {typedText}
-                <span className="inline-block w-1 h-6 ml-1 bg-cyan-400 animate-pulse"></span>
-              </span>
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed text-pretty">
+              Computer Science Student passionate about
+            </p>
+            <p className="text-xl md:text-2xl text-cyan-400 font-semibold mt-1 min-h-[1em]">
+              {typedText}
+              <span className="inline-block w-1 h-6 ml-2 bg-cyan-400 animate-pulse align-middle" />
             </p>
 
             {/* CTA Button */}

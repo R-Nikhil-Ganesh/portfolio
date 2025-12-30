@@ -16,19 +16,14 @@ export function About() {
 
   const experiences = [
     {
-      title: "Computer Science Student",
-      description: "Pursuing advanced studies in CS with focus on AI, Blockchain, and scalable systems",
+      title: "ML Research Intern",
+      description: "Focused on building deliverable ML based projects.",
       year: "Present",
     },
     {
-      title: "Full Stack Developer",
-      description: "Building end-to-end solutions using modern tech stacks and best practices",
-      year: "2023 - Present",
-    },
-    {
-      title: "Open Source Contributor",
-      description: "Contributing to blockchain and AI projects in the community",
-      year: "Ongoing",
+      title: "Gingr - Web Intern",
+      description: "Built end-to-end solutions using modern tech stacks and best practices",
+      year: "2024 September - 2024 November",
     },
   ]
 

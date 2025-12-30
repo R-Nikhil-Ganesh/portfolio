@@ -11,7 +11,7 @@ const projects = [
     tech: ["Go", "Hyperledger Fabric", "QR Codes"],
     tags: ["Blockchain", "IoT"],
     span: "md:col-span-2",
-    github: "https://github.com",
+    github: "https://github.com/R-Nikhil-Ganesh/AgriChain",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const projects = [
     tech: ["Python", "Machine Learning", "Telemetry"],
     tags: ["AI/ML", "IoT"],
     span: "md:col-span-2",
-    github: "https://github.com",
+    github: "https://github.com/R-Nikhil-Ganesh/Autonomous-Vehicle-Service-Ecosystem",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const projects = [
     tech: ["Flask", "VADER NLP", "Chart.js"],
     tags: ["NLP", "Analytics"],
     span: "md:col-span-1",
-    github: "https://github.com",
+    github: "https://github.com/R-Nikhil-Ganesh/u-Snapshots",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ const projects = [
     tech: ["TypeScript", "React", "Next.js"],
     tags: ["Community", "Web3"],
     span: "md:col-span-1",
-    github: "https://github.com",
+    github: "https://github.com/R-Nikhil-Ganesh/gittogether-frontend",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const projects = [
     tech: ["Django REST", "Next.js", "PostgreSQL"],
     tags: ["Full-Stack", "Operations"],
     span: "md:col-span-2",
-    github: "https://github.com",
+    github: "https://github.com/R-Nikhil-Ganesh/Hostel-Management",
   },
 ]
 
